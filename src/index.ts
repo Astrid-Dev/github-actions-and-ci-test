@@ -1,4 +1,9 @@
-import express, { type Application, type Request, type Response, type NextFunction } from 'express'
+import express, {
+  type Application,
+  type Request,
+  type Response,
+  type NextFunction
+} from 'express'
 
 // Boot express
 const app: Application = express()
@@ -10,4 +15,6 @@ app.use('/', (req: Request, res: Response, next: NextFunction) => {
 })
 
 // Start server
-app.listen(port, () => { console.log(`Server is listening on port ${port}!`) })
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}!`)
+})
